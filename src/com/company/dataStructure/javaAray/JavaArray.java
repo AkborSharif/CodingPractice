@@ -1,4 +1,4 @@
-package com.company.dataStructure;
+package com.company.dataStructure.javaAray;
 
 import java.util.Arrays;
 /*
