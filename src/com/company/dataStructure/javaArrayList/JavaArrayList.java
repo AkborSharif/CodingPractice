@@ -20,6 +20,7 @@ public class JavaArrayList {
         for (Person p : person) {
             System.out.println(p.toString());
         }
-
+        System.out.println("Total Person: " + Person.countPerson());
+        System.out.println("Total Person: " + person.size());
     }
 }

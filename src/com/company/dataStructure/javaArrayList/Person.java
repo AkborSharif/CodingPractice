@@ -1,10 +1,10 @@
 package com.company.dataStructure.javaArrayList;
 
 public class Person {
+    private static int count = 0;
     private String name = "";
     private int age = 0;
     private char gender = 'M';
-    private int count = 0;
 
     Person(String name, int age, char gender) {
         this.name = name;
@@ -13,8 +13,8 @@ public class Person {
         count++;
     }
 
-    public int countPerson() {
-        return this.count;
+    public static int countPerson() {
+        return count;
     }
 
     public String getName() {
