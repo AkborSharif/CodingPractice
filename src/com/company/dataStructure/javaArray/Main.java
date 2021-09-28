@@ -1,4 +1,4 @@
-package com.company.dataStructure.javaAray;
+package com.company.dataStructure.javaArray;
 
 /*
 use of Array in Java

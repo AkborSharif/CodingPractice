@@ -1,4 +1,4 @@
-package com.company.dataStructure.javaAray;
+package com.company.dataStructure.javaArray;
 
 public class Array {
     int arr[];
@@ -56,5 +56,5 @@ public class Array {
     public int size() {
         return this.arr.length;
     }
-    
+
 }
