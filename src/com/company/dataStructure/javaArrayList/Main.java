@@ -2,7 +2,7 @@ package com.company.dataStructure.javaArrayList;
 
 import java.util.ArrayList;
 
-public class JavaArrayList {
+public class Main {
     public static void main(String[] args) {
         ArrayList<Person> person = new ArrayList<>();
 
