@@ -1,6 +1,12 @@
-package com.company.dataStructure.customArrayList;
+package com.company.akbor.dataStructure.linkedList;
 
-public class ArrayList {
+public class LinkedList {
+    /*A linked list is a sequential structure that consists of a sequence of items in
+    linear order which are linked to each other.
+    Hence, you have to access data sequentially and random access is not possible.
+    Linked lists provide a simple and flexible representation of dynamic sets.
+    */
+    
     public class Node {
         private int value;
         private Node next;
