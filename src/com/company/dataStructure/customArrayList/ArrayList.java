@@ -65,12 +65,29 @@ public class ArrayList {
         }
     }
 
-    public void contains() {
-
+    public boolean contains(int value) {
+        Node curr = first;
+        while (curr != null) {
+            if (curr.value == value) {
+                return true;
+            }
+            curr = curr.next;
+        }
+        return false;
     }
 
-    public void indexOf() {
-
+    public int indexOf(int value) {
+        int index = 0;
+        Node curr = first;
+        while (curr != null) {
+            if (curr.value == value) {
+                return index;
+            } else {
+                index++;
+            }
+            curr = curr.next;
+        }
+        return -1;
     }
 
 
