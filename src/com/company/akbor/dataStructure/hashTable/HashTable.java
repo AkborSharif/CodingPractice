@@ -58,6 +58,31 @@ class HashTable {
         array[index] = newNode;
     }
 
+    public void delete(int value) {
+        if (has(value)) {
+            int index = hashFunction(value);
+            // System.out.println("Index: " + index);
+            if (array[index].data == value) {
+                //System.out.println("if first node then delete: " + array[index].data);
+                array[index] = array[index].next;
+            } else {
+                Node prevNode = array[index];
+                Node currNode = prevNode.next;
+                Node nextNode = currNode.next;
+                while (currNode.data != value) {
+                    prevNode = prevNode.next;
+                    currNode = currNode.next;
+                    nextNode = nextNode.next;
+                }
+                //System.out.println("if node after first node then delete: " + currNode.data);
+                prevNode.next = nextNode;
+            }
+        } else {
+            System.out.println(value + " does not exist.");
+        }
+    }
+
+
     public void display() {
         int i = 0;
         for (Node n : array) {

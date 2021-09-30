@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         HashTable h = new HashTable(4);
         h.insert(30);
-        h.insert(3);
+        h.insert(30);
         h.insert(20);
         h.insert(63);
         h.insert(70);
@@ -18,6 +18,16 @@ public class Main {
         System.out.println("HashTable has 0 ? " + h.has(0));
         System.out.println();
 
+        System.out.println("HashTable:");
+        h.display();
+        System.out.println();
+
+        h.delete(42);
+        h.delete(30);
+        h.delete(30);
+        h.delete(2);
+        h.delete(0);
+        System.out.println();
         System.out.println("HashTable:");
         h.display();
     }
