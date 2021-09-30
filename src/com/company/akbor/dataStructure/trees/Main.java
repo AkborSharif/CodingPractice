@@ -12,14 +12,16 @@ public class Main {
         tree = bst.insert(tree, 6);
         tree = bst.insert(tree, 4);
         tree = bst.insert(tree, 7);
+        tree = bst.insert(tree, 9);
+        tree = bst.insert(tree, 6);
 
-        System.out.print("in-order: ");
-        bst.inOrder(tree);
+        System.out.print("in-order recursive: ");
+        bst.inOrderRecursive(tree);
         System.out.println();
-        System.out.print("pre-order: ");
-        bst.preOrder(tree);
+        System.out.print("pre-order recursive: ");
+        bst.preOrderRecursive(tree);
         System.out.println();
-        System.out.print("post-order: ");
-        bst.postOrder(tree);
+        System.out.print("post-order recursive: ");
+        bst.postOrderRecursive(tree);
     }
 }

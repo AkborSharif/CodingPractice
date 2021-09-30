@@ -9,7 +9,7 @@ in order to suit certain applications and meet certain constraints.
 Some examples are binary search tree,
 B tree, treap, red-black tree, splay tree, AVL tree and n-ary tree.
  */
-public class BinarySearchTree {
+public class BinarySearchTree extends Traversal {
     /*
      * A binary search tree (BST), as the name suggests,
      * is a binary tree where data is organized in a hierarchical structure.
@@ -37,30 +37,4 @@ public class BinarySearchTree {
         return root;
     }
 
-    public void inOrder(Node root) {
-
-        if (root != null) {
-            inOrder(root.left);
-            System.out.print(root.value + " ");
-            inOrder(root.right);
-        }
-    }
-
-    public void preOrder(Node root) {
-
-        if (root != null) {
-            System.out.print(root.value + " ");
-            preOrder(root.left);
-            preOrder(root.right);
-        }
-    }
-
-    public void postOrder(Node root) {
-
-        if (root != null) {
-            postOrder(root.left);
-            postOrder(root.right);
-            System.out.print(root.value + " ");
-        }
-    }
 }
