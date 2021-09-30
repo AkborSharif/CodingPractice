@@ -29,7 +29,7 @@ public class Traversal {
     }
 
     public void inOrderIterative(Node root) {
-
+        
     }
 
     public void preOrderIterative(Node root) {
@@ -37,6 +37,14 @@ public class Traversal {
     }
 
     public void postOrderIterative(Node root) {
+
+    }
+
+    public void depthFirstSearch(Node root) {
+
+    }
+
+    public void breathFirstSearch(Node root) {
 
     }
 }
