@@ -37,5 +37,45 @@ public class BinarySearchTree extends Traversal {
         return root;
     }
 
+    public int maxHeight(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = maxHeight(root.left);
+        int rightHeight = maxHeight(root.right);
+
+        return Math.max(leftHeight, rightHeight) + 1;
+    }
+
+    public int diameter(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = maxHeight(root.left);
+        int rightHeight = maxHeight(root.right);
+        int leftDiameter = diameter(root.left);
+        int rightDiameter = diameter(root.right);
+
+        return Math.max(1 + (leftHeight + rightHeight), Math.max(leftDiameter, rightDiameter));
+    }
+
+    public boolean balanced = true;
+
+    public int getHeight(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftHeight = maxHeight(root.left);
+        int rightDiameter = maxHeight(root.right);
+        if (Math.abs(leftHeight - rightDiameter) > 1) {
+            balanced = false;
+        }
+        return Math.max(leftHeight, rightDiameter) + 1;
+    }
+
+    public boolean isBalanced(Node root) {
+        getHeight(root);
+        return balanced;
+    }
 
 }

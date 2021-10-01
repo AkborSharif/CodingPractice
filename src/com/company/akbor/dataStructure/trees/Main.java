@@ -15,6 +15,10 @@ public class Main {
         tree = bst.insert(tree, 9);
         tree = bst.insert(tree, 6);
 
+        System.out.println("Maximum Height: " + bst.maxHeight(tree));
+        System.out.println("Diameter: " + bst.diameter(tree));
+        System.out.println("Balanced: " + bst.isBalanced(tree));
+
         System.out.print("in-order recursive: ");
         bst.inOrderRecursive(tree);
         System.out.println();
