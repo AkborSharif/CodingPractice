@@ -11,6 +11,7 @@ public class Main {
         linkedList.addLast(6);
         linkedList.display();
 
+        
         System.out.println(linkedList.indexOf(4));
         System.out.println(linkedList.indexOf(3));
         System.out.println(linkedList.indexOf(9));
