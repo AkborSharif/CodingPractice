@@ -1,6 +1,6 @@
 package com.company.akbor.codingProblems.string;
 
-public class Random {
+public class OperationCount {
     private static int operationCount(String word, int input1, int input2) {
         String oword = word;
         String cword = word;
@@ -26,9 +26,8 @@ public class Random {
 
 
     public static void main(String[] args) {
-        // System.out.println(operationCount("abcabc", 1, 1));
+        System.out.println(operationCount("abcabc", 1, 1));
 
-        String word = "{\"0\":{\"name\":\"John\"},\"1\":{\"name\":\"micheal\"}}";
-        
+
     }
 }
