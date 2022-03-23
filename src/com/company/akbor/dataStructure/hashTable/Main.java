@@ -22,13 +22,23 @@ public class Main {
         h.display();
         System.out.println();
 
+
+
+        System.out.println("HashTable Delete Node:");
         h.delete(42);
+        h.display();
+        System.out.println();
         h.delete(30);
+        h.display();
+        System.out.println();
         h.delete(30);
+        h.display();
+        System.out.println();
         h.delete(2);
+        h.display();
+        System.out.println();
         h.delete(0);
         System.out.println();
-        System.out.println("HashTable:");
         h.display();
     }
 }

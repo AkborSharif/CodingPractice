@@ -3,7 +3,7 @@ import java.util.Arrays;
 
 public class Array {
      private int size;
-     private int count = 0;
+     private int count;
 
      private int[] items;
 
@@ -21,11 +21,11 @@ public class Array {
           }
 
           }
-
      public void insert(int num) {
-          for (int i = 0; i < count; i++) {
                items[count++] = num;
+               //System.out.println(count);
           }
-     }
+     public void delete(int index){
 
+     }
 }

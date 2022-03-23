@@ -46,9 +46,7 @@ class HashTable {
         }
     }
 
-    public int hashFunction(int value) {
-        return value % size;
-    }
+    public int hashFunction(int value) {return value % size;}
 
     public void insert(int value) {
         int index = hashFunction(value);

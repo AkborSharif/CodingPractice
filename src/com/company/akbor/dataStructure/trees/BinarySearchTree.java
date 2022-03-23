@@ -27,8 +27,7 @@ public class BinarySearchTree extends Traversal {
      * */
     public Node insert(Node root, int value) {
         if (root == null) {
-            Node newNode = new Node(value);
-            root = newNode;
+            root = new Node(value);
         } else if (value <= root.value) {
             root.left = insert(root.left, value);
         } else {
@@ -66,11 +65,11 @@ public class BinarySearchTree extends Traversal {
             return 0;
         }
         int leftHeight = maxHeight(root.left);
-        int rightDiameter = maxHeight(root.right);
-        if (Math.abs(leftHeight - rightDiameter) > 1) {
+        int rightHeight = maxHeight(root.right);
+        if (Math.abs(leftHeight - rightHeight) > 1) {
             balanced = false;
         }
-        return Math.max(leftHeight, rightDiameter) + 1;
+        return Math.max(leftHeight, rightHeight) + 1;
     }
 
     public boolean isBalanced(Node root) {
