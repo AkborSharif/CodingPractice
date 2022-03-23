@@ -5,7 +5,6 @@ import java.util.LinkedList;
 
 public class Traversal {
     public void inOrderRecursive(Node root) {
-
         if (root != null) {
             inOrderRecursive(root.left);
             System.out.print(root.value + " ");
@@ -14,7 +13,6 @@ public class Traversal {
     }
 
     public void preOrderRecursive(Node root) {
-
         if (root != null) {
             System.out.print(root.value + " ");
             preOrderRecursive(root.left);
@@ -23,7 +21,6 @@ public class Traversal {
     }
 
     public void postOrderRecursive(Node root) {
-
         if (root != null) {
             postOrderRecursive(root.left);
             postOrderRecursive(root.right);
@@ -38,7 +35,8 @@ public class Traversal {
             if (root != null) {
                 stack.add(root);
                 root = root.left;
-            } else {
+            }
+            else {
                 if (stack.isEmpty()) {
                     break;
                 }

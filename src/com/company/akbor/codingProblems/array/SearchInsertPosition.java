@@ -4,7 +4,7 @@ public class SearchInsertPosition {
     public static int searchInsert(int[] nums, int target) {
         int start = 0;
         int end = nums.length - 1;
-        int mid = 0;
+        int mid;
         while (start + 1 < end) {
             mid = (start + end) / 2;
             if (target == nums[mid]) {
@@ -20,6 +20,6 @@ public class SearchInsertPosition {
     }
 
     public static void main(String[] args) {
-        System.out.println(searchInsert(new int[]{1, 3, 5, 6}, 7));
+        System.out.println(searchInsert(new int[]{1, 3, 5, 6}, 9));
     }
 }
