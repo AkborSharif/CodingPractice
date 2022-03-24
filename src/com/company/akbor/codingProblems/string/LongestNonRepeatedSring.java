@@ -14,17 +14,17 @@ public class LongestNonRepeatedSring {
                 set.add(c);
                 i++;
                 max = Math.max(set.size(), max);
+                System.out.println(set);
             } else {
                 c = s.charAt(j);
                 set.remove(c);
                 j++;
             }
         }
-
         return max;
     }
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abcabcbcdj"));
+        System.out.println(lengthOfLongestSubstring("abcadabcd"));
     }
 }

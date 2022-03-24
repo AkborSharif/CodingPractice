@@ -58,9 +58,7 @@ public class LongestPalindromicString {
 
     public static void main(String[] args) {
         String s = "babbad";
-        s = "bbaabb";
-
-        System.out.println(s.substring(s.length() - 2));
+        s = "bbcaaabb";
         System.out.println(longestPalindrome(s));
     }
 }
