@@ -21,7 +21,7 @@ public class AmazonZombieProb {
             }
         }
 
-        int[][] directions = new int[][]{{0, 1}, {0, -1}, {-1, 0}, {1, 0}};+
+        int[][] directions = new int[][]{{0, 1}, {0, -1}, {-1, 0}, {1, 0}};
         while (!queue.isEmpty() && humanCount > 0) {
             int queueSize = queue.size();
             for (int i = 0; i < queueSize; i++) {
