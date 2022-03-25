@@ -38,8 +38,8 @@ public class TreasureIsland {
                 {
                 {'O', 'O', 'O', 'O'},
                 {'D', 'O', 'D', 'O'},
-                {'X', 'O', 'O', 'O'},
-                {'O', 'D', 'D', 'O'}
+                {'0', 'O', 'O', 'O'},
+                {'X', 'D', 'D', 'O'}
                 };
 
         System.out.println(obj.findShortestRoute(input));
