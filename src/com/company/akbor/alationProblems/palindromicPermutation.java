@@ -15,6 +15,8 @@ public class palindromicPermutation {
 
         int[]char_count = new int[128];
 
+
+
         for (int i = 0; i < s.length(); i++) {
             char_count[s.charAt(i)]++;
         }
@@ -29,6 +31,6 @@ public class palindromicPermutation {
         return count <=1;
     }
     public static void main(String[] args) {
-        System.out.println(canPermutePalindrome("abaadaaaaaaaab"));
+        System.out.println(canPermutePalindrome("dddddvvv"));
     }
 }
