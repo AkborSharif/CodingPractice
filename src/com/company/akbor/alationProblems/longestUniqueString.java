@@ -2,7 +2,10 @@ package com.company.akbor.alationProblems;
 
 import java.util.HashSet;
 import java.util.Set;
-
+/*
+* Time complexity: O(n) where n is the number of char in the string
+* Space Complexity: O(n) ; hashset stores the n number of character
+* */
 public class longestUniqueString {
     public static int lengthOfUniqueSubstring(String s){
         Set<Character> set = new HashSet<>();
