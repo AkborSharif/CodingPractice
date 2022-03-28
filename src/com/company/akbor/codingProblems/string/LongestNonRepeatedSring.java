@@ -14,7 +14,7 @@ public class LongestNonRepeatedSring {
                 set.add(c);
                 i++;
                 max = Math.max(set.size(), max);
-                System.out.println(set);
+                System.out.println(set + "  Max: "+ max);
             } else {
                 c = s.charAt(j);
                 set.remove(c);
