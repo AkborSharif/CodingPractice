@@ -15,11 +15,14 @@ public class binarySearch {
             }
         }
         //post processing
-        if (Math.abs(target - nums[last]) <= Math.abs(target - nums[first])) {
-            return last;
-        } else {
-            return first;
-        }
+//        if (Math.abs(target - nums[last]) <= Math.abs(target - nums[first])) {
+//            return last;
+//        } else {
+//            return first;
+//        }
+        if (target == nums[first]) return first;
+        else if (target == nums[last]) return last;
+        else return -1;
     }
 
     public static void main(String[] args) {
@@ -31,8 +34,8 @@ public class binarySearch {
         }
         System.out.println();
         int first = 0;
-        int last = nums.length;
-        int index = Search(nums, 1, first, last);
+        int last = nums.length-1;
+        int index = Search(nums, 5, first, last);
         System.out.println(index);
     }
 }
