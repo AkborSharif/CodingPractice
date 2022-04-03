@@ -13,10 +13,14 @@ public class AmazonKClosestPointToOrigin {
         for (int i = 0; i < points.length; i++) {
             queue.add(new int[]{points[i][0], points[i][1]});
 
+            queue.stream().forEach(a-> System.out.print(Arrays.toString(a)));
+            System.out.println();
             if (queue.size() > k) {
                 queue.poll();
             }
         }
+
+
 
         int[][] answer = new int[k][2];
 
@@ -29,12 +33,12 @@ public class AmazonKClosestPointToOrigin {
     }
 
     public static void main(String[] args) {
-        int [][] points = {{3,3},{5,-1}, {-2, 4}};
+        int [][] points = {{3,3},{5,-1}, {-2, 4}, {0,0}};
         int k = 2;
         int [][] ans = kClosest(points,k);
 
         for (int [] i:ans) {
-            System.out.println(Arrays.toString(i));
+            System.out.print(Arrays.toString(i) + " ");
             }
     }
 }

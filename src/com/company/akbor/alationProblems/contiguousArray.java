@@ -29,3 +29,4 @@ public class contiguousArray {
         System.out.println(findMaxLength(new int[]{0,1,0,1}));
     }
 }
+
