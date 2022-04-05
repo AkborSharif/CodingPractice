@@ -1,4 +1,4 @@
-package com.company.akbor.alationProblems;
+package com.company.akbor.interviewProblems;
 
 public class rotationalCipherString {
     public static String encrypt(String text, int rotationFactor){

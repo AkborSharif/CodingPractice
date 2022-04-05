@@ -1,4 +1,4 @@
-package com.company.akbor.alationProblems;
+package com.company.akbor.interviewProblems;
 
 public class palindromicPermutation {
     public static boolean canPermutePalindrome(String s){
