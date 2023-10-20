@@ -44,6 +44,9 @@ public class AmazonKFrequentWords {
             map.compute(word, (key, val) -> val == null ? 1 : ++val);
         }
 
+       for(String word: map.keySet()){
+           System.out.println(word +" -> "+map.get(word));
+       }
         return map.keySet().stream()
                 .sorted((a, b) -> Integer.compare(map.get(b), map.get(a)))
                 .limit(k)
@@ -51,6 +54,12 @@ public class AmazonKFrequentWords {
     }
     public static void main(String[] args) {
         String [] words = {"I", "love", "to", "I", "love", "coding"};
-        System.out.println(topKFrequent(words, 2));
+        System.out.println(topKFrequent(words, 3));
+
+
+
+        List.of(1,2,1,2,3,24,12,21).stream().sorted((a,b)->Integer.compare(a,b)).forEach(System.out::println);
+
+        //System.out.println(Integer.compare(2,1));
     }
 }

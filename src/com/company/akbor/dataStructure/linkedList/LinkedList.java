@@ -10,7 +10,6 @@ public class LinkedList {
     public class Node {
         private int value;
         private Node next;
-
         Node(int value) {
             this.value = value;
         }
@@ -36,22 +35,20 @@ public class LinkedList {
         Node newNode = new Node(value);
         if (first == null) {
             first = newNode;
-            last = newNode;
         } else {
             last.next = newNode;
-            last = newNode;
         }
+        last = newNode;
     }
 
     public void addFirst(int value) {
         Node newNode = new Node(value);
         if (first == null) {
-            first = newNode;
             last = newNode;
         } else {
             newNode.next = first;
-            first = newNode;
         }
+        first = newNode;
     }
 
     public void deleteFirst() {

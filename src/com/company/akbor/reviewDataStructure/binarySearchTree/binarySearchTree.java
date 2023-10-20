@@ -44,7 +44,7 @@ public class binarySearchTree {
 
 
 
-        //Depth First or Postorder : Stack
+        //Depth First or Pretorder : Stack
         public void DFS(Node root){
             LinkedList<Node>Stack = new LinkedList();
             LinkedList<Integer> output = new LinkedList<>();

@@ -8,21 +8,21 @@ public class NumberOfIsland {
 
                 if(grid[i][j] == '1'){
                     count++;
-                    BFS(grid, i , j);
+                    DFS(grid, i , j);
                 }
             }
         }
         return count;
     }
-    public static void BFS (char[][] grid, int i, int j){
+    public static void DFS (char[][] grid, int i, int j){
         if(i<0 || i>= grid.length|| j<0 || j>= grid[i].length || grid[i][j] == '0')
             return;
 
         grid[i][j] = '0';
-        BFS(grid, i+1 , j); //up
-        BFS(grid, i-1 , j); //down
-        BFS(grid, i , j-1); //right
-        BFS(grid, i , j+1); //left
+        DFS(grid, i+1 , j); //down
+        DFS(grid, i-1 , j); //up
+        DFS(grid, i , j-1); //left
+        DFS(grid, i , j+1); //right
 
 
     }

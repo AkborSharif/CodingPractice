@@ -25,6 +25,6 @@ public class LongestNonRepeatedSring {
     }
 
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("abcadabcd"));
+        System.out.println(lengthOfLongestSubstring("abcbdabcd"));
     }
 }

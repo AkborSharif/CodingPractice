@@ -41,9 +41,9 @@ class HashTable {
     public HashTable(int size) {
         this.size = size;
         this.array = new Node[size];
-        for (int i = 0; i < size; i++) {
-            array[i] = null;
-        }
+//        for (int i = 0; i < size; i++) {
+//            array[i] = null;
+//        }
     }
 
     public int hashFunction(int value) {return value % size;}

@@ -1,5 +1,8 @@
 package com.company.akbor.codingProblems.number;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class GCD {
 
     public static int gcdHelper(int a, int b){
@@ -19,5 +22,14 @@ public class GCD {
         int [] nums = {3,6,9};
        int gcd =  greatCommonDivisor(nums);
         System.out.println(gcd);
+
+
+        List<String> name = new ArrayList<>();
+        name.add("akbor");
+        name.add("akbor");
+        name.add("newaz");
+        name.add("newaz");
+
+        System.out.print(name.indexOf("newazst"));
     }
 }

@@ -6,7 +6,7 @@ public class SearchInsertPosition {
         int end = nums.length - 1;
         int mid;
         while (start + 1 < end) {
-            mid = (start + end) / 2;
+            mid = start + (end-start) / 2;
             if (target == nums[mid]) {
                 return mid;
             } else if (target > nums[mid]) {
