@@ -18,6 +18,10 @@ public class Graph {
         adjacentList.get(from).add(to);
     }
 
+    public int getVertices() {
+        return vertices;
+    }
+
     public void print() {
         int i = 0;
         System.out.println("Graph(Adjacent List): ");
